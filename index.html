@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Route Navigator - Multi-Stop Edition</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="ui-panel">
+        <h2>Route Planner</h2>
+        <p>Click on the map to add <b>Source</b>, <b>Waypoints</b>, and <b>Destination</b>.</p>
+        
+        <div id="info-display">
+            <div id="status">Waiting for selection...</div>
+            <hr>
+            <div class="data-row"><b>Total Distance:</b> <span id="distance-val">-</span></div>
+            <div class="data-row"><b>Total Est. Time:</b> <span id="time-val">-</span></div>
+            <div class="data-row"><b>Navigation Steps:</b> <div id="steps-val">-</div></div>
+        </div>
+        
+        <button onclick="clearMap()">Clear Map</button>
+    </div>
+    
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="dijkstra.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
