@@ -1,4 +1,4 @@
-const map = L.map('map').setView([37.2153, 28.3636], 15); 
+const map = L.map('map').setView([28.6139, 77.2090], 13); 
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '© OpenStreetMap contributors'
